@@ -24,7 +24,7 @@ namespace TxtEditor
             UpdateStatusBar();
             this.Size = new Size(800, 600);
             this.StartPosition = FormStartPosition.CenterScreen;
-            this.Text = "Explorer TXT Editor";
+            this.Text = "Explorer Text Editor";
         }
 
         private void InitializeControls()
@@ -130,7 +130,7 @@ namespace TxtEditor
         {
             string filename = string.IsNullOrEmpty(currentFilePath) ? "未命名.txt" : Path.GetFileName(currentFilePath);
             string modified = isModified ? "*" : "";
-            this.Text = $"{filename}{modified} - Explorer TXT Editor";
+            this.Text = $"{filename}{modified} - Explorer Text Editor";
         }
 
         private void UpdateStatusBar()
@@ -317,7 +317,7 @@ namespace TxtEditor
         private void About_Click(object sender, EventArgs e)
         {
             MessageBox.Show(
-                "Explorer TXT Editor v1.0\n\n一个简单的文本编辑器，支持创建、编辑和保存TXT文件。\n完全由DeepSeek v3.2制作。",
+                "Explorer Text Editor v1.0\n\n一个简单的文本编辑器，支持创建、编辑和保存TXT文件。\n完全由DeepSeek v3.2制作。",
                 "关于",
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Information);
